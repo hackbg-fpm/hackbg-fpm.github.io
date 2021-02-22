@@ -13,14 +13,18 @@
       
       <categories>
           
-          <category> life </category>
+          <category> 父分类 </category>
+          
+          <category> 子分类 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> welcome,test </tag>
+            <tag> test </tag>
+            
+            <tag> 测试 </tag>
             
         </tags>
       
