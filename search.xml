@@ -8,21 +8,21 @@
       <link href="/2019/08/13/dic/"/>
       <url>/2019/08/13/dic/</url>
       
-        <content type="html"><![CDATA[<h1 id="他"><a href="#他" class="headerlink" title="他"></a>他</h1><blockquote><p>mwva</p></blockquote><ul><li>mwva</li><li>mwva</li></ul><ol><li>他</li></ol><hr><ol><li>囧</li><li>2021/2/20 21:51:24 </li></ol><p><img src="/images/1.png" alt="h"></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="一级目录"><a href="#一级目录" class="headerlink" title="一级目录"></a>一级目录</h1><blockquote><p>mwva</p></blockquote><ul><li>mwva</li><li>mwva</li></ul><h2 id="二级目录"><a href="#二级目录" class="headerlink" title="二级目录"></a>二级目录</h2><ol><li>囧</li><li>2021/2/20 21:51:24 </li></ol><h3 id="三级目录"><a href="#三级目录" class="headerlink" title="三级目录"></a>三级目录</h3><hr><h1 id="一级目录-1"><a href="#一级目录-1" class="headerlink" title="一级目录"></a>一级目录</h1><p><img src="/images/1.png" alt="h"></p>]]></content>
       
       
       <categories>
           
-          <category> 父分类 </category>
+          <category> 分类1 </category>
           
-          <category> 子分类 </category>
+          <category> 分类2 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> test </tag>
+            <tag> test标签 </tag>
             
             <tag> 测试 </tag>
             
