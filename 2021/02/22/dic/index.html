@@ -217,10 +217,23 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/1.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -385,7 +398,7 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    373
+                    432
                 </div>
                 
 
@@ -416,7 +429,12 @@ categories:
 - 分类2
 date: 发布日期
 updated: 更新日期
-summary: 文章摘要</code></pre>
+summary: 文章摘要
+img: 文章封面
+author: 作者
+top: true    文章是否置顶，值为 true，则会作为首页推荐文章
+cover: false    是否需要加入到首页轮播封面中
+coverImg: 加入首页轮播后封面图片路径</code></pre>
 <hr>
 <h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><pre><code># 一级标题
 
@@ -714,8 +732,7 @@ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></pre>
                 <a href="/2021/02/22/dic/">
                     <div class="card-image">
                         
-                        
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Markdown笔记">
+                        <img src="/images/1.png" class="responsive-img" alt="Markdown笔记">
                         
                         <span class="card-title">Markdown笔记</span>
                     </div>
@@ -768,8 +785,7 @@ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></pre>
                 <a href="/2021/02/22/dic/">
                     <div class="card-image">
                         
-                        
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Markdown笔记">
+                        <img src="/images/1.png" class="responsive-img" alt="Markdown笔记">
                         
                         <span class="card-title">Markdown笔记</span>
                     </div>
@@ -1012,7 +1028,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">373</span>&nbsp;字
+                class="white-color">432</span>&nbsp;字
             
             
             
