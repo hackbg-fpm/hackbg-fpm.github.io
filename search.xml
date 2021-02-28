@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>腾讯云香港轻量服务器使用笔记</title>
+      <link href="/2021/02/28/v2ray/"/>
+      <url>/2021/02/28/v2ray/</url>
+      
+        <content type="html"><![CDATA[<h2 id="v2ray搭建"><a href="#v2ray搭建" class="headerlink" title="v2ray搭建"></a>v2ray搭建</h2><p>1.购买<strong>香港</strong>地区的轻量云服务器（Centos7+）后，开启全部的tcp和udp端口。如下图  </p><p><img src="/images/v2ray/1.png"><br><img src="/images/v2ray/2.png"></p><p>2.远程登录云服务器，运行如下命令  </p><pre><code>sudo -ibash &lt;(curl -Ls https://blog.sprov.xyz/v2-ui.sh)</code></pre><p><img src="/images/v2ray/3.png"><br><img src="/images/v2ray/4.png"><br><img src="/images/v2ray/5.png">  </p><p>3.安装完成后输入云服务器公网ip:65432进入后台，用户名密码都为admin<br><img src="/images/v2ray/6.png"><br>4.进入后台后添加账号，然后导入v2ray即可。<br><img src="/images/v2ray/7.png"><br><img src="/images/v2ray/8.png"></p><h2 id="部署谷歌bbr加速"><a href="#部署谷歌bbr加速" class="headerlink" title="部署谷歌bbr加速"></a>部署谷歌bbr加速</h2><h3 id="升级Centos7内核"><a href="#升级Centos7内核" class="headerlink" title="升级Centos7内核"></a>升级Centos7内核</h3><p>内核不可低于 4.9.0<br>1.输入如下命令查看内核版本</p><pre><code>uname -r</code></pre><p>2.分别输入如下命令安装内核</p><pre><code>sudo rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.orgsudo rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpmsudo yum --enablerepo=elrepo-kernel install kernel-ml -y</code></pre><p>3.显示grub2菜单中的所有条目：</p><pre><code>sudo egrep ^menuentry /etc/grub2.cfg | cut -f 2 -d \&#39;</code></pre><p>4.从3命令显示的条目中选择要更换的内核版本，设第一个条目为0正好是我们需要的内核。则输入如下命令（第二个就为1，以此类推）</p><pre><code>sudo grub2-set-default 0</code></pre><p>5.重启系统</p><pre><code>sudo shutdown -r now</code></pre><p>6.查看内核是否更换成功(不低于4.9.0)</p><pre><code>uname -r</code></pre><h3 id="启用BBR加速"><a href="#启用BBR加速" class="headerlink" title="启用BBR加速"></a>启用BBR加速</h3><p>1.输入如下命令修改配置</p><pre><code>echo &#39;net.core.default_qdisc=fq&#39; | sudo tee -a /etc/sysctl.confecho &#39;net.ipv4.tcp_congestion_control=bbr&#39; | sudo tee -a /etc/sysctl.confsudo sysctl -p</code></pre><p>2.确认已启用bbr</p><pre><code>sudo sysctl net.ipv4.tcp_available_congestion_control</code></pre><p>3.验证</p><pre><code>lsmod | grep bbr</code></pre><p>结果类似如下即成功开启bbr</p><pre><code>tcp_bbr                16384  0</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 云服务器 </category>
+          
+          <category> Linux </category>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> v2ray </tag>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Markdown笔记</title>
       <link href="/2021/02/22/markdown-bi-ji/"/>
       <url>/2021/02/22/markdown-bi-ji/</url>

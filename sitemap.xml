@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hackbg.gitee.io/2021/02/28/v2ray/</loc>
+    
+    <lastmod>2021-02-28</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://hackbg.gitee.io/2021/02/22/markdown-bi-ji/</loc>
     
     <lastmod>2021-02-22</lastmod>
@@ -46,15 +53,29 @@
 
   <url>
     <loc>https://hackbg.gitee.io/</loc>
-    <lastmod>2021-02-25</lastmod>
+    <lastmod>2021-02-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
+    <loc>https://hackbg.gitee.io/tags/v2ray/</loc>
+    <lastmod>2021-02-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hackbg.gitee.io/tags/Linux/</loc>
+    <lastmod>2021-02-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://hackbg.gitee.io/tags/Markdown/</loc>
-    <lastmod>2021-02-25</lastmod>
+    <lastmod>2021-02-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -62,15 +83,36 @@
 
   
   <url>
+    <loc>https://hackbg.gitee.io/categories/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <lastmod>2021-02-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://hackbg.gitee.io/categories/Markdown/</loc>
-    <lastmod>2021-02-25</lastmod>
+    <lastmod>2021-02-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hackbg.gitee.io/categories/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Linux/</loc>
+    <lastmod>2021-02-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://hackbg.gitee.io/categories/Markdown/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2021-02-25</lastmod>
+    <lastmod>2021-02-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hackbg.gitee.io/categories/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Linux/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2021-02-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
