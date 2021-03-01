@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>关于java环境重装的问题</title>
+      <link href="/2021/03/01/java-huan-jing-chong-zhuang/"/>
+      <url>/2021/03/01/java-huan-jing-chong-zhuang/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote><p>由于上次加装固态硬盘，导致java环境失效，所以将其卸载重装。 </p></blockquote><hr><h2 id="java环境变量配置"><a href="#java环境变量配置" class="headerlink" title="java环境变量配置"></a>java环境变量配置</h2><pre><code>#添加系统变量新建变量名：JAVA_HOME 变量值：java安装路径，如F:\Program Files\Java\jdk1.8.0_221新建变量名：classpath 变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar (前面的.不要漏掉)在Path变量中加入变量值：.;%JAVA_HOME%\bin;（加在最前面）</code></pre><hr><h2 id="报错"><a href="#报错" class="headerlink" title="报错"></a>报错</h2><pre><code>Error: opening registry key &#39;Software\JavaSoft\JavaRuntime Environment&#39; Error: could not find java.dllError: Could not find Java SE Runtime Environment. </code></pre><hr><h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><ul><li>Windows键+r 输入regedit打开注册表</li><li>依次进入目录HKEY_LOCAL_MACHINE—–&gt;SOFTWARE—–&gt;JavaSoft—–&gt;Java Development Kit</li><li>查看文件，将旧的文件删除</li><li>进入C:\Windows\System32找到java.exe和javaw.exe并将它们删除（地址栏中输入**%SystemRoot%\system32**也可进入该路径）</li><li>cmd命令行运行java -version验证环境是否配置成功。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>腾讯云香港轻量云服务器使用笔记</title>
       <link href="/2021/02/28/v2ray/"/>
       <url>/2021/02/28/v2ray/</url>
