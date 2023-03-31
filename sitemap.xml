@@ -102,13 +102,6 @@
   </url>
   
   <url>
-    <loc>https://hackbg.gitee.io/tags/Markdown/</loc>
-    <lastmod>2023-03-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://hackbg.gitee.io/tags/v2ray/</loc>
     <lastmod>2023-03-31</lastmod>
     <changefreq>daily</changefreq>
@@ -117,6 +110,13 @@
   
   <url>
     <loc>https://hackbg.gitee.io/tags/Linux/</loc>
+    <lastmod>2023-03-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hackbg.gitee.io/tags/Markdown/</loc>
     <lastmod>2023-03-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -160,14 +160,14 @@
   </url>
   
   <url>
-    <loc>https://hackbg.gitee.io/categories/%E7%AC%94%E8%AE%B0/Markdown/</loc>
+    <loc>https://hackbg.gitee.io/categories/%E7%AC%94%E8%AE%B0/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
     <lastmod>2023-03-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://hackbg.gitee.io/categories/%E7%AC%94%E8%AE%B0/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <loc>https://hackbg.gitee.io/categories/%E7%AC%94%E8%AE%B0/Markdown/</loc>
     <lastmod>2023-03-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
