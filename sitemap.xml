@@ -2,16 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://hackbg.gitee.io/2023/03/30/java-dai-ma-bi-ji/</loc>
+    <loc>https://hackbg.gitee.io/2022/03/15/java-dai-ma-bi-ji/</loc>
     
-    <lastmod>2023-04-01</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hackbg.gitee.io/2023/03/31/xin-jian-wen-zhang-ce-shi/</loc>
-    
-    <lastmod>2023-03-31</lastmod>
+    <lastmod>2022-03-16</lastmod>
     
   </url>
   
@@ -102,13 +95,6 @@
   </url>
   
   <url>
-    <loc>https://hackbg.gitee.io/tags/java/</loc>
-    <lastmod>2023-04-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://hackbg.gitee.io/tags/Markdown/</loc>
     <lastmod>2023-04-01</lastmod>
     <changefreq>daily</changefreq>
@@ -136,17 +122,17 @@
     <priority>0.6</priority>
   </url>
   
-
-  
   <url>
-    <loc>https://hackbg.gitee.io/categories/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/</loc>
+    <loc>https://hackbg.gitee.io/tags/Java/</loc>
     <lastmod>2023-04-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
+
+  
   <url>
-    <loc>https://hackbg.gitee.io/categories/java/</loc>
+    <loc>https://hackbg.gitee.io/categories/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/</loc>
     <lastmod>2023-04-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -189,6 +175,13 @@
   
   <url>
     <loc>https://hackbg.gitee.io/categories/%E7%AC%94%E8%AE%B0/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Linux/</loc>
+    <lastmod>2023-04-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hackbg.gitee.io/categories/Java/</loc>
     <lastmod>2023-04-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
