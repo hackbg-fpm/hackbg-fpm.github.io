@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="SQL随机, 黑客帮,HackBG,hackbg,肥胖喵博客,肥胖喵,微信公众号黑客帮">
+    <meta name="keywords" content="SQL随记, 黑客帮,HackBG,hackbg,肥胖喵博客,肥胖喵,微信公众号黑客帮">
     <meta name="description" content="分享知识，记录学习心得的个人博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>SQL随机 | HackBG</title>
+    <title>SQL随记 | HackBG</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -239,12 +239,12 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">SQL随机</h1>
+                    <h1 class="description center-align post-title">SQL随记</h1>
                 </div>
             </div>
         </div>
@@ -386,7 +386,7 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-04-08
+                    2022-08-08
                 </div>
                 
 
@@ -799,6 +799,8 @@ age<span class="token operator">=</span><span class="token keyword">values</span
 <h3 id="查询距离当前现在6个月的数据"><a href="#查询距离当前现在6个月的数据" class="headerlink" title="查询距离当前现在6个月的数据"></a>查询距离当前现在6个月的数据</h3><pre class=" language-sql"><code class="language-sql"><span class="token keyword">select</span> name<span class="token punctuation">,</span>submittime fromenterprise <span class="token keyword">where</span> submittime betweendate_sub<span class="token punctuation">(</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>interval <span class="token number">6</span> month<span class="token punctuation">)</span> <span class="token operator">and</span> <span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 <h3 id="更新表中有效期valid-time字段值都增加一天"><a href="#更新表中有效期valid-time字段值都增加一天" class="headerlink" title="更新表中有效期valid_time字段值都增加一天"></a>更新表中有效期valid_time字段值都增加一天</h3><pre class=" language-sql"><code class="language-sql"><span class="token keyword">UPDATE</span> cqh_activity <span class="token keyword">SET</span> valid_time<span class="token operator">=</span>DATE_ADD<span class="token punctuation">(</span>valid_time<span class="token punctuation">,</span>INTERVAL <span class="token number">1</span> DAY<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 <h3 id="更新表中有效期valid-time字段值都减少一天"><a href="#更新表中有效期valid-time字段值都减少一天" class="headerlink" title="更新表中有效期valid_time字段值都减少一天"></a>更新表中有效期valid_time字段值都减少一天</h3><pre class=" language-sql"><code class="language-sql"><span class="token keyword">UPDATE</span> cqh_activity <span class="token keyword">SET</span> valid_time<span class="token operator">=</span>DATE_SUB<span class="token punctuation">(</span>valid_time<span class="token punctuation">,</span>INTERVAL <span class="token number">1</span> DAY<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>​    </p>
+<p>​    </p>
 
             </div>
             <hr/>
@@ -824,7 +826,7 @@ age<span class="token operator">=</span><span class="token keyword">values</span
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://hackbg.gitee.io/2023/04/08/ql-sui-ji/">https://hackbg.gitee.io/2023/04/08/ql-sui-ji/</a>
+                    <a href="https://hackbg.gitee.io/2022/08/08/sql-sui-ji/">https://hackbg.gitee.io/2022/08/08/sql-sui-ji/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1033,27 +1035,24 @@ age<span class="token operator">=</span><span class="token keyword">values</span
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2023/04/08/ql-sui-ji/">
+                <a href="/2022/08/08/sql-sui-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="SQL随机">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="SQL随记">
                         
-                        <span class="card-title">SQL随机</span>
+                        <span class="card-title">SQL随记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            SQL语句及函数sql执行顺序
-联合查询：UNIONSELECT '案件总数' as `type`, SUM(case_count) as `count` 
- FROM T_ZWCX_XZSS_CASELOAD_STATISTICS
- UN
+                            常用SQL语句及函数
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-08
                             </span>
                         <span class="publish-author">
                             
