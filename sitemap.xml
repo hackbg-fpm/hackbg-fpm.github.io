@@ -2,7 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://hackbg.gitee.io/2023/04/08/ava-xue-xi-bi-ji/</loc>
+    <loc>https://hackbg.gitee.io/2023/04/08/ql-sui-ji/</loc>
+    
+    <lastmod>2023-04-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hackbg.gitee.io/2022/06/08/java-xue-xi-bi-ji/</loc>
     
     <lastmod>2023-04-08</lastmod>
     
@@ -131,6 +138,13 @@
   
   <url>
     <loc>https://hackbg.gitee.io/tags/Java/</loc>
+    <lastmod>2023-04-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hackbg.gitee.io/tags/SQL/</loc>
     <lastmod>2023-04-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
