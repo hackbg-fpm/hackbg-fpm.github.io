@@ -160,14 +160,14 @@
   </url>
   
   <url>
-    <loc>https://hackbg-fpm.github.io/categories/Java/</loc>
+    <loc>https://hackbg-fpm.github.io/categories/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2024-01-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://hackbg-fpm.github.io/categories/%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://hackbg-fpm.github.io/categories/Java/</loc>
     <lastmod>2024-01-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
